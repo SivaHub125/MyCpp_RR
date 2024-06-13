@@ -7,5 +7,7 @@ int main() {
     db.printGrades();
     db.printProfessors();
     db.printCredits();
+    return 0;
+
 }
 
