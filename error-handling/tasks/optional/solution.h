@@ -2,6 +2,7 @@
 #include <string>
 #include <optional>
 #include <cctype>
+#include <stdexcept>
 
 std::optional<int> parseInteger(const std::string& s) {
     if (s.empty()) {
