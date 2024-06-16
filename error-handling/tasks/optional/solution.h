@@ -19,9 +19,9 @@ std::optional<int> parseInteger(const std::string& s) {
             return std::nullopt;
         }
         return value;
-    } catch (const std::invalid_argument) {
+    } catch (const std::invalid_argument& e) {
         return std::nullopt;
-    } catch (const std::out_of_range) {
+    } catch (const std::out_of_range& e) {
         return std::nullopt;
     }
 }
