@@ -1,36 +1,30 @@
 #include<iostream>
 #include <limits>
-using namespace std;
 
 void solution() {
     // Write your solution here
-    // Hint: Check what is std::cin.fail()
     double num1;
     double num2;
-    cout<<"Enter the first number: ";
-    cin>>num1;
-    if (cin.fail()) {
-        cin.clear();
-        cin.ignore(numeric_limits<streamsize>::max(),'\n');
-        cout << "Invalid input. Please enter a valid number."<<endl;
+    std::cout<<"Enter the first number: ";
+    std::cin>>num1;
+    if (std::cin.fail()) {
+        std::cout << "Invalid input. Please enter a valid number."<<std::endl;
     }
     else{
-        cout<<"Enter the second number: ";
-        cin>>num2;
-        if (cin.fail()) {
-            cin.clear();
-            cin.ignore(numeric_limits<streamsize>::max(),'\n');
-            cout << "Invalid input. Please enter a valid number."<<endl;
+        std::cout<<"Enter the second number: ";
+        std::cin>>num2;
+        if (std::cin.fail()) {
+            std::cout << "Invalid input. Please enter a valid number."<<std::endl;
         }
         else{
-            cout<<"Sum: "<<num1+num2<<endl;
-            cout<<"Difference: "<<num1-num2<<endl;
-            cout<<"Product: "<<num1*num2<<endl;
+            std::cout<<"Sum: "<<num1+num2<<std::endl;
+            std::cout<<"Difference: "<<num1-num2<<std::endl;
+            std::cout<<"Product: "<<num1*num2<<std::endl;
             if(num2==0){
-                cout<<"Division by zero error!"<<endl;
+                std::cout<<"Division by zero error!"<<std::endl;
             }
             else{
-                cout<<"Quotient: "<<num1/num2<<endl;
+                std::cout<<"Quotient: "<<num1/num2<<std::endl;
             }
         }
     }
