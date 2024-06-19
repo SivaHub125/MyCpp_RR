@@ -1,15 +1,9 @@
 #pragma once
 #include<iostream>
-using namespace std;
 // Write your solution here
 template <class T>
 T Max(T a,T b){
-    if(a>b){
-        return a;
-    }
-    else{
-        return b;
-    }
+    return (a>b)? a:b; 
 }
 /*
 Point Max(Point a,Point b){
