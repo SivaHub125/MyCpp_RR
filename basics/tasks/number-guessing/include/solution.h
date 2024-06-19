@@ -21,11 +21,24 @@ public:
         // Write your solution here, assume that numberToGuees is already set
         // Below is incorrect solution, replace it with your solution
         int guess;
+        int count=1;
+        while(count<=10){
         std::cin >> guess;
         if (numberToGuess == guess) {
-            std::cout << "Correct! You took 1 guesses." << std::endl;
-        } else {
-            std::cout << ":(" << std::endl;
+            std::cout << "Guess the number (between 1 and 100): Correct! You took "<<count<<" guesses."<< std::endl;
+            break;
+        } 
+        else if(numberToGuess>guess){
+            std::cout << "Guess the number (between 1 and 100): Too low!" << std::endl;
+            count=count+1;
+        }
+        else if(numberToGuess<guess){
+            std::cout<<"Guess the number (between 1 and 100): Too high!"<<std::endl;
+            count=count+1;
+        }
+        else{
+            std::cout <<"Error"<<std::endl;
+        }
         }
     }
 
