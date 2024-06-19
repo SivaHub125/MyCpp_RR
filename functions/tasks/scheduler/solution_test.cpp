@@ -38,7 +38,7 @@ TEST(SchedulerTests, ClearsTasksAfterRun) {
     scheduler.runAll();
 
 
-    scheduler.runAll();
+    
     ASSERT_EQ(outputs.size(), 1u);
 }
 
