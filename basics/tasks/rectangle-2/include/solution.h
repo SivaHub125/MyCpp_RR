@@ -7,6 +7,8 @@ private:
     // Write your code here
 public:
     Rectangle(){
+        height=1.0;
+        width=1.0;
         std::cout<<"Rectangle created with default dimensions."<<std::endl;
     }
     Rectangle(double w,double h){
@@ -17,7 +19,7 @@ public:
     ~Rectangle(){
         std::cout<<"Deleting rectangle."<<std::endl;
     }
-    void printDimensions(){
+    void const printDimensions(){
         std::cout<<"Width: "<<width<<", Height: "<<height<<std::endl;
     }
     void setWidth(double num){
