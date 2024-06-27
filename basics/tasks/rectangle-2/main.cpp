@@ -11,6 +11,7 @@ int main() {
     std::cin >> height;
     Rectangle rect(width, height);
     rect.setHeight(height);
+    rect.setWidth(width);
     rect.printDimensions();
     std::cout << "Area: " << rect.getArea() << std::endl;
     std::cout << "Perimeter: " << rect.getPerimeter() << std::endl;
